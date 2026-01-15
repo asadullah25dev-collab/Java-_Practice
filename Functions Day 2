@@ -1,0 +1,53 @@
+public class swap {
+    public static void main(String[] args) {
+        int a = 20;
+        int b = 30;
+//      swap numbers code
+//        int temp = a;
+//        a = b;
+//        b = temp;
+
+        swap(65,54);
+        System.out.println(a + " " + b);
+    }
+    static void swap(int a , int b){
+        int temp =a;
+        a =b;
+        b=temp;
+String name = "asad";
+change(name);
+        System.out.println(name);
+    }
+    static String change(String name){
+        name = "rahul";
+        return name;
+    }
+}
+//pass by value of that reference variable
+public class PassingExample {
+    public static void main(String[] args) {
+        String name = diff("asad");
+        System.out.println(name);
+    }
+    static String diff(String naam){
+        String name = "rahul";
+        return naam;
+    }
+}
+// Scoping concepts:
+  
+public class Scoping {
+    public static void main(String[] args) {
+        int a = 333;
+
+        {
+            // int a =445; already inititalised value, you cannot initialised it again.
+           a =45;
+           int c= 342;
+        //   value defined will remain in this block
+        }
+        //cannnot use outside the block
+    }
+
+}
+ 
