@@ -1,0 +1,59 @@
+//  Shadowing Concept code
+public class Shadowing {
+    static int x;//this will be shadowed
+    public static void main(String[] args) {
+        System.out.println(x);
+        // shadowing begins where the x begins means the x, scope will begin when value is initialized.
+        int x =40;
+        System.out.println(x);
+    }
+
+
+}
+
+//VarArgs Concept Code
+import java.util.Arrays;
+
+public class VarArgs {
+    public static void main(String[] args) {
+        int num =fun(3,4,5,6,7,8,6,3,2,4,6,7,5);
+        System.out.println(num);
+        String name = fun("asad, rahul, khaja, lala");
+    }
+//Overloading Concept Code
+public class Overloading {
+    public static void main(String[] args) {
+// two type same method can exist when arguments are different
+int ans =fun(20,30,6464);
+        System.out.println(ans);
+        String name = fun("Asad");
+        System.out.println(name);
+    }
+    static int fun(int a, int b, int c){
+        int sum = a+b+c;
+        return sum;
+    }
+    static String fun( String name){
+        String message ="Hello"+name;
+        return  message;
+    }
+}
+DSA Quesiton Solved 
+public class assignmentVote {
+    public static void main(String[] args) {
+
+        boolean eligible = isVote(5);
+        System.out.println(eligible);
+
+        if (eligible){
+            System.out.println("yes");
+        }
+        else {
+            System.out.println("No");
+        }
+}
+static boolean isVote(int age){
+    return age>=18;
+}
+}
+
