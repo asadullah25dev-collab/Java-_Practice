@@ -1,0 +1,25 @@
+public class assignEven_Odd {
+    public static void main(String[] args) {
+
+
+//        This the is Prime Or Not Problem 
+
+        boolean ans = IsPrime(54);
+        System.out.println(ans);
+
+            }
+            static boolean IsPrime(int n){
+
+        if (n<=1){
+            return false;
+
+        }
+        int c = 2;
+        if (c*c<=n){
+            if (n%c==0){
+                return false;
+            }
+            c++;
+
+            }
+                return true;
